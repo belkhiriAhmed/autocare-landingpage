@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoCare - Find nearby car services, mechanics, bodywork, electrical repairs, and more. Fast and easy car service in your pocket.">
+    <title>AutoCare - Car Service App | Find Nearby Auto Services</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="car-icon">
+                <i class="fas fa-car"></i>
+            </div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- <a href="#" class="logo">
+                <i class="fas fa-car-side"></i>
+                <span>Auto<span class="highlight">Care</span></span>
+            </a> -->
+            <a href="#" class="logo">
+                <img src="assets/images/app_icon.png" alt="AutoCare Logo" width="40" height="40"> 
+                <span>Auto<span class="highlight">Care</span></span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-buttons">
+                <a href="#https://drive.google.com/file/d/1IJmzsy2JO2s4T2ZiSrgNTBNjNmHPdxgW/view?usp=sharing" class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                    Download App
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="badge">
+                        <i class="fas fa-star"></i>
+                        #1 Car Service App
+                    </span>
+                    <h1>Fast and Easy <span class="gradient-text">Car Service</span> in Your Pocket</h1>
+                    <p>Find nearby mechanics, bodywork specialists, electrical services, gas stations, and spare parts. Connect with trusted professionals and get your car back on the road.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="5000">0</span>+
+                            <span class="stat-label">Service Providers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="50000">0</span>+
+                            <span class="stat-label">Happy Users</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="58">0</span>
+                            <span class="stat-label">Wilayas Covered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://drive.google.com/file/d/1IJmzsy2JO2s4T2ZiSrgNTBNjNmHPdxgW/view?usp=sharing" class="btn btn-primary btn-lg">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <span class="btn-subtitle">Get Apk Version (Test)</span>
+                                <span class="btn-title">Download App</span>
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-lg">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <span class="btn-subtitle">Coming Soon</span>
+                                <span class="btn-title">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="assets/images/screenshots/home.png" alt="AutoCare App Home Screen">
+                            </div>
+                        </div>
+                        <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-wrench"></i>
+                            <span>Mechanic Found!</span>
+                        </div>
+                        <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 Rating</span>
+                        </div>
+                        <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="700">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>500m Away</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <!-- <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-text">Trusted by thousands of car owners across Algeria</p>
+            <div class="brand-logos">
+                <div class="brand-logo"><i class="fas fa-car"></i> Toyota</div>
+                <div class="brand-logo"><i class="fas fa-car"></i> Renault</div>
+                <div class="brand-logo"><i class="fas fa-car"></i> Peugeot</div>
+                <div class="brand-logo"><i class="fas fa-car"></i> Hyundai</div>
+                <div class="brand-logo"><i class="fas fa-car"></i> Volkswagen</div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Features</span>
+                <h2>Everything You Need for Your <span class="gradient-text">Car Care</span></h2>
+                <p>Discover all the amazing features that make AutoCare the best choice for car owners</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>Find Nearby Services</h3>
+                    <p>Locate mechanics, bodywork shops, gas stations, and more based on your current location.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon secondary">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Ratings & Reviews</h3>
+                    <p>Make informed decisions with authentic ratings and reviews from real customers.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Smart Filters</h3>
+                    <p>Filter by service type, region, city, and agency name to find exactly what you need.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon secondary">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Post your car problems and get answers from verified automotive experts.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Service Provider Profiles</h3>
+                    <p>View detailed agency info, working hours, services offered, and photos.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon secondary">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Save Favorites</h3>
+                    <p>Bookmark your preferred service providers for quick access anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">App Preview</span>
+                <h2>Beautiful & <span class="gradient-text">Intuitive Design</span></h2>
+                <p>Take a look at our elegant and user-friendly interface</p>
+            </div>
+            
+            <div class="screenshots-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="screenshots-slider" id="screenshotsSlider">
+                    <div class="screenshot-slide">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/onboarding.png" alt="Onboarding Screen">
+                        </div>
+                        <span class="screenshot-label">Onboarding</span>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/login.png" alt="Login Screen">
+                        </div>
+                        <span class="screenshot-label">Login</span>
+                    </div>
+                    <div class="screenshot-slide active">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/home.png" alt="Home Screen">
+                        </div>
+                        <span class="screenshot-label">Home</span>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/search.png" alt="Search Screen">
+                        </div>
+                        <span class="screenshot-label">Search</span>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/support.png" alt="Support Screen">
+                        </div>
+                        <span class="screenshot-label">Support</span>
+                    </div>
+                    <div class="screenshot-slide">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/profile.png" alt="Profile Screen">
+                        </div>
+                        <span class="screenshot-label">Profile</span>
+                    </div>
+                     <div class="screenshot-slide">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/car-rental.png" alt="Car Rental Screen">
+                        </div>
+                        <span class="screenshot-label">Car Rental</span>
+                    </div>
+                     <div class="screenshot-slide">
+                        <div class="phone-mockup-small">
+                            <img src="assets/images/screenshots/assistance.png" alt="Assistance Screen">
+                        </div>
+                        <span class="screenshot-label">Auto Assistance</span>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="screenshots-bg-shape"></div>
+    </section>
+
+    <!-- Services Categories Section -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Services</span>
+                <h2>All Car Services in <span class="gradient-text">One Place</span></h2>
+                <p>Whatever your car needs, we've got you covered</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-icon mechanic">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h4>Mechanic</h4>
+                    <p>Engine repairs & maintenance</p>
+                </div>
+                
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="category-icon bodywork">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h4>Bodywork</h4>
+                    <p>Dent repair & painting</p>
+                </div>
+                
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-icon electrical">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Electrical</h4>
+                    <p>Wiring & electronics</p>
+                </div>
+                
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="category-icon technical">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h4>Technical Control</h4>
+                    <p>Vehicle inspection</p>
+                </div>
+                
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-icon gas">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+                    <h4>Gas Stations</h4>
+                    <p>Fuel & car wash</p>
+                </div>
+                
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="category-icon parts">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Spare Parts</h4>
+                    <p>Original & aftermarket</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Process</span>
+                <h2>How <span class="gradient-text">AutoCare</span> Works</h2>
+                <p>Get started in just a few simple steps</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Download the App</h3>
+                        <p>Get AutoCare from Google Play or App Store for free</p>
+                    </div>
+                </div>
+                
+                <div class="step-connector"></div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Create Account</h3>
+                        <p>Sign up as a Client or Service Provider in minutes</p>
+                    </div>
+                </div>
+                
+                <div class="step-connector"></div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Find Services</h3>
+                        <p>Search and filter to find the perfect service provider</p>
+                    </div>
+                </div>
+                
+                <div class="step-connector"></div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Get Service</h3>
+                        <p>Visit the service provider and get your car fixed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Testimonials</span>
+                <h2>What Our <span class="gradient-text">Users Say</span></h2>
+                <p>Real experiences from real car owners</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"AutoCare saved me when my car broke down. Found a great mechanic in minutes! The app is so easy to use."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/images/avatar.png" alt="User">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ahmed B.</h4>
+                            <span>Algiers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"As a service provider, this app has brought me so many new customers. The platform is professional and trustworthy. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/images/avatar.png" alt="User">
+                        </div>
+                        <div class="author-info">
+                            <h4>Karim M.</h4>
+                            <span>Mechanic, Oran</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Love the expert support feature! Got great advice on my engine problem. The community is very helpful."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/images/avatar.png" alt="User">
+                        </div>
+                        <div class="author-info">
+                            <h4>Samira L.</h4>
+                            <span>Constantine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <!-- <section class="download-cta" id="download">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text" data-aos="fade-right">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Download AutoCare now and join thousands of satisfied car owners. Your next service is just a tap away!</p>
+                    
+                    <div class="download-buttons">
+                        <a href="#" class="btn btn-white btn-lg">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <span class="btn-subtitle">Get it on</span>
+                                <span class="btn-title">Apk</span>
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-outline-white btn-lg">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <span class="btn-subtitle">Coming soon</span>
+                                <span class="btn-title">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="app-info">
+                        <div class="info-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free to download</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No credit card required</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Works offline</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-image" data-aos="fade-left">
+                    <div class="phones-stack">
+                        <div class="phone back">
+                            <img src="assets/images/screenshots/search.png" alt="Search Screen">
+                        </div>
+                        <div class="phone front">
+                            <img src="assets/images/screenshots/home.png" alt="Home Screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-shapes">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Contact</span>
+                <h2>Get in <span class="gradient-text">Touch</span></h2>
+                <p>Have questions? We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>support@autocare.dz</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+213 555 123 456</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Algiers, Algeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <i class="fas fa-pen"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-car-side"></i>
+                        <span>Auto<span class="highlight">Care</span></span>
+                    </a>
+                    <p>Your trusted partner for all car services. Find, compare, and connect with the best service providers in Algeria.</p>
+                    <div class="download-badges">
+                        <a href="#"><img src="assets/images/google-play-badge.png" alt="Google Play"></a>
+                        <a href="#"><img src="assets/images/app-store-badge.png" alt="App Store"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Mechanics</a></li>
+                        <li><a href="#">Bodywork</a></li>
+                        <li><a href="#">Electrical</a></li>
+                        <li><a href="#">Technical Control</a></li>
+                        <li><a href="#">Gas Stations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoCare. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
